@@ -5,6 +5,8 @@
     [placeholder]="this.placeholder()"
     autofocus
     (keyup.enter)="this.onSearchCapital(txtCapital.value)"
+    (keyup)="this.inputValue.set(txtCapital.value)"
+    [value]="this.inputValue()"
     #txtCapital
   />
   <button
